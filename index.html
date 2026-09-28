@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SILENT HILL: Townfall Ending Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>SILENT HILL: Townfall<br>エンディング計算機</h1>
+
+    <div class="input-group">
+      <label for="clues">発見数 (手がかり・文書)</label>
+      <input type="number" id="clues" value="0" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="kills">敵の撃破数</label>
+      <input type="number" id="kills" value="0" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="revives">カニューレ蘇生回数</label>
+      <input type="number" id="revives" value="0" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="misses">ゾーイの手術ミス回数</label>
+      <input type="number" id="misses" value="0" min="0">
+    </div>
+
+    <div class="result-box">
+      <div class="result-score">計算スコア: <span id="score">0</span> pt</div>
+      <div class="result-ending" id="ending">判定中...</div>
+    </div>
+
+    <p class="formula-note">
+      ※ 敵の撃破数が60体以上の場合は、スコアに関わらず「放棄（バッド）」エンドが確定します。
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
